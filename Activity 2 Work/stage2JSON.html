@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stage 2 JSON Activity</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<body>
+
+<script>
+	var myData = "";
+var staticUrl = 'https://raw.githubusercontent.com/nreszetnik/nreszetnik.github.io/master/Activity%202%20Work/Data/DataforS1.json'; 
+
+$.getJSON(staticUrl, function(data) {
+        console.log(data)
+    });
+</script>
+
+</body>
+</html>
