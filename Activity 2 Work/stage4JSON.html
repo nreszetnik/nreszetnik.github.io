@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
+
+  <h1>HIV Infection Rates Compared Proportionally By Country<h1>
+  <div id = "div1"><p id = "p1"></p>
+    </div>
+    <div id = "div2"><p id = "p2"></p>
+    </div>
+    <div id = "div3"><p id = "p3"></p>
+    </div>
 <head>
-	<title>Stage 3 JSON Activity</title>
+	<title>Stage 4 JSON Activity</title>
 </head>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -13,11 +21,12 @@
 var staticUrl = 'https://raw.githubusercontent.com/nreszetnik/nreszetnik.github.io/master/Activity%202%20Work/Data/DataforS1.json'; 
 
 $.getJSON(staticUrl, function(data) {
-        console.log(data)
-    	console.log(data.fact[1].dims.COUNTRY)
-   	 	console.log(data.fact[1].dims.GHO)
-   		console.log(data.fact[1].dims.YEAR)
+        country1Data = data.fact[1].Value; 
+        val1 = country1Data.substring(0,country1Data.indexOf("["));
+        val1 = val1.replace(" ","");
+        val1 = parseInt(val1);
     });
+
 </script>
 
 </body>
