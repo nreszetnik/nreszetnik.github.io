@@ -5,169 +5,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Noto+Serif|ZCOOL+XiaoWei" rel="stylesheet">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
- 
-<style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 
-	body {
-		  margin: 0;
-		  font-family: Arial, Helvetica, sans-serif;
-		}
-		
-		/* NAVIGATION CODE */
-
-		.topnav {
-		  overflow: hidden;
-		  background-color: #7BD858;
-		}
-
-		.topnav a {
-		  float: left;
-		  color: #f2f2f2;
-		  text-align: center;
-		  padding: 14px 16px;
-		  text-decoration: none;
-		  font-size: 17px;
-		}
-
-		.topnav a:hover {
-		  background-color: #3FA917;
-		  color: black;
-		}
-
-		.topnav a.active {
-		  background-color: #2A8607;
-		  color: white;
-		}
-
-		/* HEADER CODE */
-		.header {
-		  padding: 10px 16px;
-		  background: #5BC236;
-		  color: #f1f1f1;
-		}
-
-		/* Page content */
-		.content {
-		  padding: 16px;
-		}
-
-		/* The sticky class is added to the header with JS when it reaches its scroll position */
-		.sticky {
-		  position: fixed;
-		  top: 0;
-		  width: 100%
-		}
-
-		/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-		.sticky + .content {
-		  padding-top: 102px;
-		}
-
-		#headerfont{
-			margin: 20px;
-			font-size: 50px;
-			font-family: 'ZCOOL XiaoWei', serif;
-		}
-
-		.topnav > a {
-		font-family: 'ZCOOL XiaoWei', serif;	
-		}
-
-		* {box-sizing:border-box}
-
-		/* Slideshow container */
-		.slideshow-container {
-			position: relative;
-			margin: auto;
-		}
-
-		/* Hide the images by default */
-		.mySlides {
-		  display: none;
-		}
-
-		/* Next & previous buttons */
-		.prev, .next {
-		  cursor: pointer;
-		  position: absolute;
-		  top: 50%;
-		  width: auto;
-		  margin-top: -22px;
-		  padding: 16px;
-		  color: white;
-		  font-weight: bold;
-		  font-size: 18px;
-		  transition: 0.6s ease;
-		  border-radius: 0 3px 3px 0;
-		  user-select: none;
-		}
-
-		/* Position the "next button" to the right */
-		.next {
-		  right: 0;
-		  border-radius: 3px 0 0 3px;
-		}
-
-		/* On hover, add a black background color with a little bit see-through */
-		.prev:hover, .next:hover {
-		  background-color: rgba(0,0,0,0.8);
-		}
-
-		/* Caption text */
-		.text {
-		  color: #f2f2f2;
-		  font-size: 15px;
-		  padding: 8px 12px;
-		  position: absolute;
-		  bottom: 8px;
-		  width: 100%;
-		  text-align: center;
-		}
-
-		/* Number text (1/3 etc) */
-		.numbertext {
-		  color: #f2f2f2;
-		  font-size: 12px;
-		  padding: 8px 12px;
-		  position: absolute;
-		  top: 0;
-		}
-
-		/* The dots/bullets/indicators */
-		.dot {
-		  cursor: pointer;
-		  height: 15px;
-		  width: 15px;
-		  margin: 0 2px;
-		  background-color: #bbb;
-		  border-radius: 50%;
-		  display: inline-block;
-		  transition: background-color 0.6s ease;
-		}
-
-		.active, .dot:hover {
-		  background-color: #717171;
-		}
-
-		/* Fading animation */
-		.fade {
-		  -webkit-animation-name: fade;
-		  -webkit-animation-duration: 1.5s;
-		  animation-name: fade;
-		  animation-duration: 1.5s;
-		}
-
-		@-webkit-keyframes fade {
-		  from {opacity: .4} 
-		  to {opacity: 1}
-		}
-
-		@keyframes fade {
-		  from {opacity: .4} 
-		  to {opacity: 1}
-		}
-
-	</style>
 
 </head>
 
@@ -221,56 +60,25 @@
 	  <span class="dot" onclick="currentSlide(3)"></span> 
 	</div>
 
+	<div class = "content">
 
-<script>
-		// When the user scrolls the page, execute myFunction 
-		window.onscroll = function() {myFunction()};
+		Introduction
 
-		// Get the header
-		var header = document.getElementById("myHeader");
+	</div>
+	<hr>
+	
+	<div id = "introduction" class = "flex-container">
 
-		// Get the offset position of the navbar
-		var sticky = header.offsetTop;
+		<div id = "sec1intro">
 
-		// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-		function myFunction() {
-		  if (window.pageYOffset > sticky) {
-		    header.classList.add("sticky");
-		  } else {
-		    header.classList.remove("sticky");
-		  }
-		}
+		</div>
 
-		var slideIndex = 1;
-		showSlides(slideIndex);
+		<div id = "sec2intro">
+		</div>
 
-		// Next/previous controls
-		function plusSlides(n) {
-		  showSlides(slideIndex += n);
-		}
+	</div>
 
-		// Thumbnail image controls
-		function currentSlide(n) {
-		  showSlides(slideIndex = n);
-		}
-
-		function showSlides(n) {
-		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("dot");
-		  if (n > slides.length) {slideIndex = 1} 
-		  if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-		      slides[i].style.display = "none"; 
-		  }
-		  for (i = 0; i < dots.length; i++) {
-		      dots[i].className = dots[i].className.replace(" active", "");
-		  }
-		  slides[slideIndex-1].style.display = "block"; 
-		  dots[slideIndex-1].className += " active";
-		}
-
-</script>
+	<script type="text/javascript" src="script.js"></script>  
 
 </body>
 </html>
