@@ -51,7 +51,7 @@
 
 		.topnav a:hover {
 		  background-color: #3FA917;
-		  color: black;
+		  color: #;
 		}
 
 		.topnav a.active {
@@ -154,6 +154,7 @@
 		.numbertext {
 		  color: #f2f2f2;
 		  font-size: 12px;
+		  font-family: 'ZCOOL XiaoWei', serif;
 		  padding: 8px 12px;
 		  position: absolute;
 		  top: 0;
@@ -221,7 +222,7 @@
 		  font-size: 30px;
 		  height: 300px;
 		  min-width: 300px;
-		  max-width: 300px;
+		  max-width: 400px;
 		}
 
 		.flex-container p {
@@ -230,12 +231,25 @@
 			font-family: 'ZCOOL XiaoWei', serif;
 		}
 
-		.graph {
-		  display: block;
-		  margin-left: auto;
-		  margin-right: auto;
+				* {
+		  box-sizing: border-box;
+		}
+
+		.column {
+		  float: left;
 		  width: 50%;
-			}
+		  padding: 10px;
+		  max-width: 100%;
+		  height: auto;
+		  border: 5px solid #7BD858;
+		}
+
+		/* Clearfix (clear floats) */
+		.row::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
 
 		.content {
 			width: 100%;
@@ -252,4 +266,54 @@
 			padding: 5px;
 			text-align: center;
 			}
+
+				div.gallery {
+		  border: 0px solid #ccc;
+		}
+
+		div.gallery:hover {
+		  border: 5px solid #7BD858;
+		}
+
+		div.gallery img {
+		  width: 100%;
+		  height: auto;
+		}
+
+		div.desc {
+		  padding: 15px;
+		  text-align: center;
+		  color: white;
+		  font-family: 'ZCOOL XiaoWei', serif;
+		  font-size: 25px; 
+		}
+
+		* {
+		  box-sizing: border-box;
+		}
+
+		.responsive {
+		  padding: 0 6px;
+		  float: left;
+		  width: 24.99999%;
+		}
+
+		@media only screen and (max-width: 700px) {
+		  .responsive {
+		    width: 49.99999%;
+		    margin: 6px 0;
+		  }
+		}
+
+		@media only screen and (max-width: 500px) {
+		  .responsive {
+		    width: 100%;
+		  }
+		}
+
+		.clearfix:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
 

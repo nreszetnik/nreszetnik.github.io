@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {margin:0;
+    background-color:darkred;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+    }#button{
+        position: fixed;
+/*        top:103px;*/
+/*        left:200px;*/
+
+    }#result{
+       position: fixed;
+        top: 600px;
+        left: 83px; 
+        color: white;
+        font: 30px;
+
+    }
+    
+    
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #FF6833;
+  color: white;
+  font-size: 30px;
+}
+    
+
+.header2 {
+  padding: 60px;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+}
+    
+.word3 {
+    color:white;
+    font-size: 30px;
+
+}
+
+
+.input-res {
+padding: 8px;
+background: white;
+color: black;
+font-size: 20px;
+/*    top: 500px;*/
+/*    margin-top: 200px;*/
+/*position: absolute;*/
+/*top: 800px;*/
+/*left: 100px;*/
+    }
+
+
+input {
+position: absolute;
+top: 500px;
+left: 80px;
+width: 20%;
+border: 2px solid purple;
+border-radius: 10px;
+padding: 10px 10px;
+box-sizing: border-box;
+background-color: antiquewhite;
+-webkit-transition: width 0.4s ease-in-out;
+transition: width 0.4s ease-in-out;
+}
+    
+
+input[type=text]:focus {
+  background-color: blanchedalmond;
+  width: 25%;
+}
+    
+    
+</style>
+</head>
+<body>
+    
+
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<div class="header">
+<h1>Proportion of population below the international poverty line of US$1.90 per day (%) Search</h1>
+</div>
+    
+
+<div class="header2">
+<h2>Search Country PPBIPL Limits</h2>
+</div>
+ 
+
+<style>
+body {
+    font-family: 'Roboto';font-size: 20px;
+    }#txtAutoComplete{
+        position: fixed;
+/*        top:100px;*/
+/*        left:50px;*/
+        color: #4cbb17;
+        margin: 0;
+    }
+</style>
+
+<!-- <div id="fixed"> </div> -->
+<input id="txtAutoComplete" list="dlAutoComplete" placeholder="Enter Country..." type="text"/ onfocus="this.value=''" class="input-res">
+<datalist id="dlAutoComplete">
+</datalist>    
+
+
+
+<style>
+.round-button {
+    position: relative;
+    top: 495px;
+    left: 450px;
+    width: 4%;
+    height: 0;
+    padding-bottom: 3.7%;
+    border-radius: 50%;
+    border: 2px solid #27f2b5;
+    overflow: hidden;
+    background: #262626;
+    box-shadow: 0 0 3px gray;
+    text-align: center;
+    margin: 0 auto; 
+    display: inline-block;
+    justify-content: center;
+    background-position: center;
+    line-height: auto;
+    color: white;
+    text-align: center; 
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+        
+}
+.round-button:hover {
+    background: 5;
+    
+}
+
+    
+    </style>
+    
+<button id="button" class="round-button" onclick="search()">GO</button>
+<div id="results"></div>
+
+    <p id="result" class="word3"></p>
+    
+<p id="demo"></p>    
+
+<ul>
+<li><a class="active" href="create2.html">Home</a></li>
+<li><a href="file:///Users/jaiman.gledhill/Desktop/GitRepo%20Year%209/jaimangledhill.github.io/UN%20Website/ungoalsmisp.html">No Poverty</a></li>
+<li style="float:right"><a href="https://www.google.com/url?q=http%3A%2F%2Fapps.who.int%2Fgho%2Fdata%2Fview.main.GSWCAH43&sa=D&sntz=1&usg=AFQjCNG_QK0tOpwI-jHsCZ6qlmSa09Qz5g">WHO data</a></li>
+    </ul>
+ 
+    <script type="text/javascript" src="data.js"></script>
+    <script src = dat-3.json></script>
+
+
+
+ 
+</body>
+</html>

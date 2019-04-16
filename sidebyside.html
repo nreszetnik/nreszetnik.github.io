@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://medium.com/@UNDP/building-equality-on-the-roof-of-the-world-39885f5e35f4">
+      <img src="roof.jpeg" alt="Roof" width="600" height="400">
+    </a>
+    <div class="desc">A lack of running water has adversely affected the lives of women and girls in a remote mountain village in Pakistan.
+</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://medium.com/@UNDP/the-cook-islands-prepares-for-climate-change-a7eeb947fd7">
+      <img src="fisher.jpeg" alt="Fishers" width="600" height="400">
+    </a>
+    <div class="desc">For centuries Cook Islanders have used traditional knowledge to read their environment and provide food for their families. But climate change is effecting them deeply.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://medium.com/@UNDP/water-gives-and-threatens-life-in-bhutan-97b27bcf8a90">
+      <img src="farmers.jpeg" alt="Farmers" width="600" height="400">
+    </a>
+    <div class="desc">For Phub Zem Doya who lives in the remote village of Singye in southwest Bhutan, water is precious, and not to be taken for granted.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://stories.undp.org/here-we-are-all-equal">
+      <img src="walkers.jpeg" alt="Walkers" width="600" height="400">
+    </a>
+    <div class="desc">Deyanira Mishari has an unusual job for an indigenous Peruvian woman—she’s Head of the San Matias-San Carlos Protection Forest.</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</body>
+</html>
